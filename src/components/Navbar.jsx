@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 import logo from '../assets/Images/logo.png';
 
 const Navbar = () => {
-  const LinkClass = ({ isActive }) => isActive ? 'bg-black text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2' : 'text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2';
+  const LinkclassName  = ({ isActive }) => isActive ? 'bg-black text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2' : 'text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2';
   return (
         <nav className="bg-[#92c64d] border-b border-[#92c64d]">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -26,17 +26,17 @@ const Navbar = () => {
               <div className="flex space-x-2">
                 <NavLink
                   to="/"
-                  className={ LinkClass }
+                  className={ LinkclassName  }
                   >Home</NavLink
                 >
                 <NavLink
                   to="/jobs"
-                  className={ LinkClass }
+                  className={ LinkclassName  }
                   >Jobs</NavLink
                 >
                 <NavLink
                   to="/add-job"
-                  className={ LinkClass }
+                  className={ LinkclassName  }
                   >Add Job</NavLink
                 >
               </div>
